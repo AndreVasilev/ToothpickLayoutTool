@@ -11,6 +11,12 @@
 		55CE18892932720B007575B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE18882932720B007575B6 /* ContentView.swift */; };
 		55CE188B2932720F007575B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CE188A2932720F007575B6 /* Assets.xcassets */; };
 		55CE188E2932720F007575B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CE188D2932720F007575B6 /* Preview Assets.xcassets */; };
+		55CE189629327291007575B6 /* ToothpickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE189529327291007575B6 /* ToothpickView.swift */; };
+		55CE189829327312007575B6 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE189729327312007575B6 /* SeparatorView.swift */; };
+		55CE189A29327D84007575B6 /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE189929327D84007575B6 /* SeparatorLine.swift */; };
+		55CE189D29327FD3007575B6 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = 55CE189C29327FD3007575B6 /* SVGView */; };
+		55CE189F2932803A007575B6 /* ad.svg in Resources */ = {isa = PBXBuildFile; fileRef = 55CE189E2932803A007575B6 /* ad.svg */; };
+		55CE18A329328BA7007575B6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE18A229328BA7007575B6 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		55CE188A2932720F007575B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55CE188D2932720F007575B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55CE188F2932720F007575B6 /* ToothpickLayout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToothpickLayout.entitlements; sourceTree = "<group>"; };
+		55CE189529327291007575B6 /* ToothpickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToothpickView.swift; sourceTree = "<group>"; };
+		55CE189729327312007575B6 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		55CE189929327D84007575B6 /* SeparatorLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
+		55CE189E2932803A007575B6 /* ad.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ad.svg; sourceTree = "<group>"; };
+		55CE18A229328BA7007575B6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CE189D29327FD3007575B6 /* SVGView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				55CE18862932720B007575B6 /* ToothpickLayoutApp.swift */,
-				55CE18882932720B007575B6 /* ContentView.swift */,
+				55CE18A229328BA7007575B6 /* ViewModel.swift */,
+				55CE18A429328BFC007575B6 /* Views */,
+				55CE189E2932803A007575B6 /* ad.svg */,
 				55CE188A2932720F007575B6 /* Assets.xcassets */,
 				55CE188F2932720F007575B6 /* ToothpickLayout.entitlements */,
 				55CE188C2932720F007575B6 /* Preview Content */,
@@ -67,6 +81,17 @@
 				55CE188D2932720F007575B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55CE18A429328BFC007575B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55CE18882932720B007575B6 /* ContentView.swift */,
+				55CE189529327291007575B6 /* ToothpickView.swift */,
+				55CE189729327312007575B6 /* SeparatorView.swift */,
+				55CE189929327D84007575B6 /* SeparatorLine.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +110,9 @@
 			dependencies = (
 			);
 			name = ToothpickLayout;
+			packageProductDependencies = (
+				55CE189C29327FD3007575B6 /* SVGView */,
+			);
 			productName = ToothpickLayout;
 			productReference = 55CE18832932720B007575B6 /* ToothpickLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 55CE187A2932720B007575B6;
+			packageReferences = (
+				55CE189B29327FD3007575B6 /* XCRemoteSwiftPackageReference "SVGView" */,
+			);
 			productRefGroup = 55CE18842932720B007575B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CE189F2932803A007575B6 /* ad.svg in Resources */,
 				55CE188E2932720F007575B6 /* Preview Assets.xcassets in Resources */,
 				55CE188B2932720F007575B6 /* Assets.xcassets in Resources */,
 			);
@@ -141,6 +173,10 @@
 			files = (
 				55CE18892932720B007575B6 /* ContentView.swift in Sources */,
 				55CE18872932720B007575B6 /* ToothpickLayoutApp.swift in Sources */,
+				55CE189A29327D84007575B6 /* SeparatorLine.swift in Sources */,
+				55CE189829327312007575B6 /* SeparatorView.swift in Sources */,
+				55CE18A329328BA7007575B6 /* ViewModel.swift in Sources */,
+				55CE189629327291007575B6 /* ToothpickView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55CE189B29327FD3007575B6 /* XCRemoteSwiftPackageReference "SVGView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/SVGView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55CE189C29327FD3007575B6 /* SVGView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55CE189B29327FD3007575B6 /* XCRemoteSwiftPackageReference "SVGView" */;
+			productName = SVGView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55CE187B2932720B007575B6 /* Project object */;
 }

@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct ToothpickLayoutApp: App {
+    
+    let viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
+        }
+        .commands {
+              CommandMenu("Custom actions") {
+                  Button("Reload") { viewModel.reload() }
+                      .keyboardShortcut("R")
+                  Button("Save layout") { viewModel.save() }
+                      .keyboardShortcut("S")
+              }
         }
     }
 }
